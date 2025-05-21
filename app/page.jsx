@@ -43,7 +43,7 @@ export default function Home() {
             <>
               <div className="flex items-center gap-3">
                 <Image src={assets.logo_icon} className="w-8 h-8"/>
-                <p className="text-2xl font-medium">Welcome to lexIQ — where curiosity meets clarity</p>
+                <p className="text-2xl font-medium">Sierra is ready — let your curiosity lead the way</p>
               </div>
               <p className="text-sm mt-2">Got a question or task? I'm here to help!</p>
             </>
