@@ -15,7 +15,7 @@ const Sidebar = ({expand,setExpand}) => {
     <div className={`${expand ? 'p-4 w-64' : 'md:w-20 w-0 max-md:overflow-hidden'} flex flex-col justify-between bg-[#212327] pt-7 transition-all z-50 max-md:absolute max-md:h-screen`}>
       <div>
         <div className={`flex ${expand ? 'flex-row gap-10' : 'flex-col items-center gap-8'}`}>
-          <Image className={expand ? 'w-45 h-12 ml-3' : 'w-10'} src={expand ? assets.logo_text : assets.logo_icon} alt=''/>
+          <Image className={expand ? 'w-50 h-30 ml-3 -mt-6' : 'w-10'} src={expand ? assets.logo_text : assets.logo_icon} alt=''/>
           <div onClick={() => expand ? setExpand(false) : setExpand(true)} 
           className='group relative flex items-center justify-center h-9 w-9 aspect-square-rounded-lg cursor-pointer'>
             <Image src={assets.menu_icon} alt='' className='md:hidden'/>
