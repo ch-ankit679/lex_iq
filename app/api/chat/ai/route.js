@@ -27,7 +27,7 @@ export async function POST(req){
     data.messages.push(userPrompt);
     const completion = await openai.chat.completions.create({
       messages: [{role: "user",content: prompt,}],
-      model: "deepseek/deepseek-r1:free",
+      model: "openai/gpt-4.1-mini",
       store:true,
     });
     const message = completion.choices[0].message;
